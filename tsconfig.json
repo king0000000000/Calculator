@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        //target用來指定ts被編譯為的ES版本
+        "target":"ES5",
+        //module指定要使用的模塊化規範
+        "module":"es2015",
+        //lib用來指定要使用的函式庫
+        "lib":["ES2015","DOM"],
+        //outDir用來指定編譯後文件的目錄
+        //"outDir": ".",
+        //outFile將指定範圍內的代碼合併為一個文件
+        //"outFile": ""
+        //allowJs是否對js文件編譯
+        "allowJs": true,
+        //checkJs檢查js代碼是否符合與法規範
+        "checkJs": true,
+        //removeComments是否移除註解
+        "removeComments": false,
+        //moEmit不生成編譯後的文件
+        "noEmit": false,
+        //noEmitOnError有錯誤時不生成文件
+        "noEmitOnError": true,
+
+        //strict所有嚴格檢查的總開關
+        "strict": true,
+        //alwaysStrict編譯後的文件是否使用嚴格模式
+        "alwaysStrict": true,
+        //noImplicitAny不允許隱式(默認)的any類型
+        "noImplicitAny": true,
+        //noImplicitThis補允許不明確類型的this
+        "noImplicitThis": true,
+        //strictNullChecks嚴格檢查空值
+        "strictNullChecks": true,
+    }
+}

@@ -1,0 +1,172 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #00AAFF, #00FF6C);
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*-ms-flex-pack: center;
+    min-height: 2200px;
+    height: 750px;*/
+}
+
+.calculator-grid{
+    /*IE11*/
+    display: -ms-grid;
+    -ms-grid-columns: 100px 100px 100px 100px 100px;
+    -ms-grid-rows: minmax(120px, max-content) 100px 100px 100px 100px 100px 100px;
+
+    /*其他瀏覽器*/
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(6, 100px);
+}
+
+.calculator-grid > button{
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+}
+
+.calculator-grid > button:hover{
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.col-span-two{
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+}
+
+.row-span-two{
+    -ms-grid-row-span: 2;
+    grid-row: span 2;
+}
+
+.output{
+    /*IE11*/
+    -ms-grid-column-span: 5;
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+
+    /*其他*/
+    grid-column: 1/-1;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .pre-operand{
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+}
+
+.output .cur-operand{
+    color: white;
+    font-size: 2.5rem;
+}
+
+
+#button1{
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+}#button2{
+    -ms-grid-column: 2;
+    -ms-grid-row: 2;
+}#button3{
+    -ms-grid-column: 3;
+    -ms-grid-row: 2;
+}#button4{
+    -ms-grid-column: 4;
+    -ms-grid-row: 2;
+}#button5{
+    -ms-grid-column: 5;
+    -ms-grid-row: 2;
+}#button6{
+    -ms-grid-column: 1;
+    -ms-grid-row: 3;
+}#button7{
+    -ms-grid-column: 2;
+    -ms-grid-row: 3;
+}#button8{
+    -ms-grid-column: 3;
+    -ms-grid-row: 3;
+}#button9{
+    -ms-grid-column: 4;
+    -ms-grid-row: 3;
+}#button10{
+    -ms-grid-column: 5;
+    -ms-grid-row: 3;
+}#button11{
+    -ms-grid-column: 1;
+    -ms-grid-row: 4;
+}#button12{
+    -ms-grid-column: 2;
+    -ms-grid-row: 4;
+}#button13{
+    -ms-grid-column: 3;
+    -ms-grid-row: 4;
+}#button14{
+    -ms-grid-column: 4;
+    -ms-grid-row: 4;
+}#button15{
+    -ms-grid-column: 5;
+    -ms-grid-row: 4;
+}#button16{
+    -ms-grid-column: 1;
+    -ms-grid-row: 5;
+}#button17{
+    -ms-grid-column: 2;
+    -ms-grid-row: 5;
+}#button18{
+    -ms-grid-column: 3;
+    -ms-grid-row: 5;
+}#button19{
+    -ms-grid-column: 4;
+    -ms-grid-row: 5;
+}#button20{
+    -ms-grid-column: 5;
+    -ms-grid-row: 5;
+}#button21{
+    -ms-grid-column: 1;
+    -ms-grid-row: 6;
+}#button22{
+    -ms-grid-column: 2;
+    -ms-grid-row: 6;
+}#button23{
+    -ms-grid-column: 3;
+    -ms-grid-row: 6;
+}#button24{
+    -ms-grid-column: 4;
+    -ms-grid-row: 6;
+}#button25{
+    -ms-grid-column: 5;
+    -ms-grid-row: 6;
+}#button26{
+    -ms-grid-column: 1;
+    -ms-grid-row: 7;
+}#button27{
+    -ms-grid-column: 3;
+    -ms-grid-row: 7;
+}#button28{
+    -ms-grid-column: 4;
+    -ms-grid-row: 7;
+}
